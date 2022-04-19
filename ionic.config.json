@@ -1,0 +1,7 @@
+{
+  "name": "Ionic Maps",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
