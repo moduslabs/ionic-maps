@@ -33,7 +33,6 @@ const Page: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         <Map />
-        <ExploreContainer name={name} />
       </IonContent>
     </IonPage>
   );
