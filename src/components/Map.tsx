@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { GoogleMap } from '@capacitor/google-maps';
 import './Map.css';
+import { IonButton } from '@ionic/react';
 
 const Map: React.FC = () => {
   const mapRef = React.useRef(null);
@@ -22,19 +23,16 @@ const Map: React.FC = () => {
     }
   }
 
-  React.useEffect(() => {
-    if (mapRef.current) {
-      setTimeout(() => {
-        createMap()
-      }, 100)
-    }
-  }, [mapRef]);
-
-  return <capacitor-google-map style={{
-    display: 'block',
-    width: '100%',
-    height: '100%'
-  }} id="map1" ref={mapRef}></capacitor-google-map>;
+  return (
+    <div style={{height: '600px'}}>
+      <IonButton title='TEST' onClick={createMap}>TEST</IonButton>
+      <capacitor-google-map style={{
+        display: 'block',
+        width: '100%',
+        height: '80%'
+      }} id="map1" ref={mapRef}></capacitor-google-map>
+    </div>
+  );
 };
 
 export default Map;
