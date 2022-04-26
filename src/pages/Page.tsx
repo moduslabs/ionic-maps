@@ -8,7 +8,6 @@ import {
   IonToolbar,
 } from '@ionic/react';
 import { useParams } from 'react-router';
-import ExploreContainer from '../components/ExploreContainer';
 import Map from '../components/Map';
 import './Page.css';
 
